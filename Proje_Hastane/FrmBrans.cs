@@ -16,5 +16,10 @@ namespace Proje_Hastane
         {
             InitializeComponent();
         }
+
+        private void FrmBrans_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

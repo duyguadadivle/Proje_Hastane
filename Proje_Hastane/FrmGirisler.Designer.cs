@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGirisler));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.BtnHastaGirisi = new System.Windows.Forms.Button();
+            this.BtnDoktorGirisi = new System.Windows.Forms.Button();
+            this.BtnSekreterGirisi = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -40,35 +40,35 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // BtnHastaGirisi
             // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(50, 178);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(139, 90);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = true;
+            this.BtnHastaGirisi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnHastaGirisi.BackgroundImage")));
+            this.BtnHastaGirisi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnHastaGirisi.Location = new System.Drawing.Point(50, 178);
+            this.BtnHastaGirisi.Name = "BtnHastaGirisi";
+            this.BtnHastaGirisi.Size = new System.Drawing.Size(139, 90);
+            this.BtnHastaGirisi.TabIndex = 0;
+            this.BtnHastaGirisi.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // BtnDoktorGirisi
             // 
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Location = new System.Drawing.Point(206, 178);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(139, 90);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = true;
+            this.BtnDoktorGirisi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnDoktorGirisi.BackgroundImage")));
+            this.BtnDoktorGirisi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnDoktorGirisi.Location = new System.Drawing.Point(206, 178);
+            this.BtnDoktorGirisi.Name = "BtnDoktorGirisi";
+            this.BtnDoktorGirisi.Size = new System.Drawing.Size(139, 90);
+            this.BtnDoktorGirisi.TabIndex = 1;
+            this.BtnDoktorGirisi.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // BtnSekreterGirisi
             // 
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Location = new System.Drawing.Point(361, 178);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(139, 90);
-            this.button3.TabIndex = 2;
-            this.button3.UseVisualStyleBackColor = true;
+            this.BtnSekreterGirisi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnSekreterGirisi.BackgroundImage")));
+            this.BtnSekreterGirisi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnSekreterGirisi.Location = new System.Drawing.Point(361, 178);
+            this.BtnSekreterGirisi.Name = "BtnSekreterGirisi";
+            this.BtnSekreterGirisi.Size = new System.Drawing.Size(139, 90);
+            this.BtnSekreterGirisi.TabIndex = 2;
+            this.BtnSekreterGirisi.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -128,10 +128,11 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BtnSekreterGirisi);
+            this.Controls.Add(this.BtnDoktorGirisi);
+            this.Controls.Add(this.BtnHastaGirisi);
             this.Font = new System.Drawing.Font("Georgia", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmGirisler";
             this.Text = "Form1";
@@ -143,9 +144,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button BtnHastaGirisi;
+        private System.Windows.Forms.Button BtnDoktorGirisi;
+        private System.Windows.Forms.Button BtnSekreterGirisi;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

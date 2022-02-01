@@ -26,5 +26,10 @@ namespace Proje_Hastane
         {
 
         }
+
+        private void FrmHastaDetay_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

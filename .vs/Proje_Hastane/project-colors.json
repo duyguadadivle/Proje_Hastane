@@ -5,6 +5,11 @@
       "ProjectGuid": "948dcadb-7f5a-4ebd-b1d6-4e7db3eef7fe",
       "DisplayName": "Proje_Hastane",
       "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
     }
   },
   "NextColorIndex": 1

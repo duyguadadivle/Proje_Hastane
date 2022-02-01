@@ -11,6 +11,12 @@ namespace Proje_Hastane
 {
     internal class sqlbaglantisi
     {
-        
+        public SqlConnection baglanti()
+        {
+            SqlConnection baglan = new SqlConnection("Data Source=DESKTOP-OBVPPKV;Initial Catalog=HastaneProjeDB;Integrated Security=True");
+            baglan.Open();
+            return baglan;
+
+        }
     }
 }

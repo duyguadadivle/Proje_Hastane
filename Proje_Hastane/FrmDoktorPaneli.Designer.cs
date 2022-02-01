@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDoktorPaneli));
             this.MskTC = new System.Windows.Forms.MaskedTextBox();
             this.CmbBrans = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -187,7 +188,8 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label6);
             this.Font = new System.Drawing.Font("Georgia", 13.8F);
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmDoktorPaneli";
             this.Text = "FrmDoktorPaneli";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
