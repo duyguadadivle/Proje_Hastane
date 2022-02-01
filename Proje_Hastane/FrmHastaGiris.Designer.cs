@@ -81,6 +81,8 @@
             this.TxtSifre.Name = "TxtSifre";
             this.TxtSifre.Size = new System.Drawing.Size(204, 34);
             this.TxtSifre.TabIndex = 4;
+            this.TxtSifre.UseSystemPasswordChar = true;
+            this.TxtSifre.TextChanged += new System.EventHandler(this.TxtSifre_TextChanged);
             // 
             // LnkUyeOl
             // 
@@ -91,6 +93,7 @@
             this.LnkUyeOl.TabIndex = 5;
             this.LnkUyeOl.TabStop = true;
             this.LnkUyeOl.Text = "Üye Ol";
+            this.LnkUyeOl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LnkUyeOl_LinkClicked);
             // 
             // BtnGirisYap
             // 
@@ -100,9 +103,11 @@
             this.BtnGirisYap.TabIndex = 6;
             this.BtnGirisYap.Text = "Giriş";
             this.BtnGirisYap.UseVisualStyleBackColor = true;
+            this.BtnGirisYap.Click += new System.EventHandler(this.BtnGirisYap_Click);
             // 
             // FrmHastaGiris
             // 
+            this.AcceptButton = this.BtnGirisYap;
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
@@ -118,7 +123,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmHastaGiris";
-            this.Text = "FrmHastaGiris";
+            this.Text = "Hasta Girişi";
             this.ResumeLayout(false);
             this.PerformLayout();
 

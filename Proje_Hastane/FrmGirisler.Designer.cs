@@ -49,6 +49,7 @@
             this.BtnHastaGirisi.Size = new System.Drawing.Size(139, 90);
             this.BtnHastaGirisi.TabIndex = 0;
             this.BtnHastaGirisi.UseVisualStyleBackColor = true;
+            this.BtnHastaGirisi.Click += new System.EventHandler(this.BtnHastaGirisi_Click);
             // 
             // BtnDoktorGirisi
             // 
@@ -59,6 +60,7 @@
             this.BtnDoktorGirisi.Size = new System.Drawing.Size(139, 90);
             this.BtnDoktorGirisi.TabIndex = 1;
             this.BtnDoktorGirisi.UseVisualStyleBackColor = true;
+            this.BtnDoktorGirisi.Click += new System.EventHandler(this.BtnDoktorGirisi_Click);
             // 
             // BtnSekreterGirisi
             // 
@@ -69,6 +71,7 @@
             this.BtnSekreterGirisi.Size = new System.Drawing.Size(139, 90);
             this.BtnSekreterGirisi.TabIndex = 2;
             this.BtnSekreterGirisi.UseVisualStyleBackColor = true;
+            this.BtnSekreterGirisi.Click += new System.EventHandler(this.BtnSekreterGirisi_Click);
             // 
             // label1
             // 
@@ -113,9 +116,9 @@
             this.label4.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(44, 52);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(246, 43);
+            this.label4.Size = new System.Drawing.Size(236, 43);
             this.label4.TabIndex = 7;
-            this.label4.Text = "Hastane AB ";
+            this.label4.Text = "AB Hastane";
             // 
             // FrmGirisler
             // 
@@ -134,8 +137,9 @@
             this.Font = new System.Drawing.Font("Georgia", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
+            this.MaximizeBox = false;
             this.Name = "FrmGirisler";
-            this.Text = "Form1";
+            this.Text = "AB Hastane Giriş";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

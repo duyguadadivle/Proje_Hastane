@@ -49,7 +49,7 @@
             this.TxtSifre.Location = new System.Drawing.Point(197, 184);
             this.TxtSifre.Name = "TxtSifre";
             this.TxtSifre.Size = new System.Drawing.Size(204, 34);
-            this.TxtSifre.TabIndex = 4;
+            this.TxtSifre.TabIndex = 5;
             // 
             // MskTC
             // 
@@ -154,9 +154,11 @@
             this.BtnKayitYap.TabIndex = 7;
             this.BtnKayitYap.Text = "Kayıt Yap";
             this.BtnKayitYap.UseVisualStyleBackColor = true;
+            this.BtnKayitYap.Click += new System.EventHandler(this.BtnKayitYap_Click);
             // 
             // FrmHastaKayit
             // 
+            this.AcceptButton = this.BtnKayitYap;
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
@@ -178,7 +180,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmHastaKayit";
-            this.Text = "FrmHastaKayit";
+            this.Text = "Hasta Kayıt";
             this.Load += new System.EventHandler(this.FrmHastaKayit_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
