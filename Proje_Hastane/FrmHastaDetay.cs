@@ -56,6 +56,15 @@ namespace Proje_Hastane
             da.Fill(dt);
             dataGridView1.DataSource = dt;
 
+            //Branşları çekme
+            SqlCommand komut2 = new SqlCommand("select BransAd from Tbl_Branslar", bgl.baglanti());
+            SqlDataReader dr2 = komut2.ExecuteReader();
+
+            while (dr2.Read()){
+                CmbBrans.Items.Add(dr2[0]);
+            }
+            bgl.baglanti().Close();
+
         }
     }
 }
