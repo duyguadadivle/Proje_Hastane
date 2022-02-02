@@ -52,6 +52,7 @@
             this.BtnBilgileriGuncelle.TabIndex = 25;
             this.BtnBilgileriGuncelle.Text = "Güncelle";
             this.BtnBilgileriGuncelle.UseVisualStyleBackColor = true;
+            this.BtnBilgileriGuncelle.Click += new System.EventHandler(this.BtnBilgileriGuncelle_Click);
             // 
             // CmbCinsiyet
             // 
@@ -157,6 +158,7 @@
             // 
             // FrmBilgiDuzenle
             // 
+            this.AcceptButton = this.BtnBilgileriGuncelle;
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
@@ -179,6 +181,7 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmBilgiDuzenle";
             this.Text = "FrmBilgiDuzenle";
+            this.Load += new System.EventHandler(this.FrmBilgiDuzenle_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

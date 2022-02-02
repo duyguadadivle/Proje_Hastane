@@ -74,6 +74,7 @@
             this.MskTC.Name = "MskTC";
             this.MskTC.Size = new System.Drawing.Size(204, 34);
             this.MskTC.TabIndex = 3;
+            this.MskTC.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.MskTC_MaskInputRejected);
             // 
             // TxtSifre
             // 

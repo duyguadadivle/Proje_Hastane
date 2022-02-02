@@ -60,5 +60,10 @@ namespace Proje_Hastane
         {
 
         }
+
+        private void MskTC_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
     }
 }
