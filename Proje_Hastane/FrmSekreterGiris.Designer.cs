@@ -42,16 +42,18 @@
             this.BtnGirisYap.Location = new System.Drawing.Point(301, 250);
             this.BtnGirisYap.Name = "BtnGirisYap";
             this.BtnGirisYap.Size = new System.Drawing.Size(101, 42);
-            this.BtnGirisYap.TabIndex = 13;
+            this.BtnGirisYap.TabIndex = 3;
             this.BtnGirisYap.Text = "Giriş";
             this.BtnGirisYap.UseVisualStyleBackColor = true;
+            this.BtnGirisYap.Click += new System.EventHandler(this.BtnGirisYap_Click);
             // 
             // TxtSifre
             // 
             this.TxtSifre.Location = new System.Drawing.Point(220, 196);
             this.TxtSifre.Name = "TxtSifre";
             this.TxtSifre.Size = new System.Drawing.Size(204, 34);
-            this.TxtSifre.TabIndex = 11;
+            this.TxtSifre.TabIndex = 2;
+            this.TxtSifre.UseSystemPasswordChar = true;
             // 
             // MskTC
             // 
@@ -59,7 +61,7 @@
             this.MskTC.Mask = "00000000000";
             this.MskTC.Name = "MskTC";
             this.MskTC.Size = new System.Drawing.Size(204, 34);
-            this.MskTC.TabIndex = 10;
+            this.MskTC.TabIndex = 1;
             // 
             // label3
             // 
@@ -106,6 +108,7 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmSekreterGiris";
             this.Text = "FrmSekreterGiris";
+            this.Load += new System.EventHandler(this.FrmSekreterGiris_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

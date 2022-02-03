@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.Sql;
+using System.Data.SqlClient;
+
 
 namespace Proje_Hastane
 {
@@ -17,6 +20,10 @@ namespace Proje_Hastane
             InitializeComponent();
         }
 
+        public string TCnumara;
+
+        sqlbaglantisi bgl = new sqlbaglantisi();
+
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -24,6 +31,23 @@ namespace Proje_Hastane
 
         private void FrmSekreterDetay_Load(object sender, EventArgs e)
         {
+            LblTC.Text = TCnumara;
+
+            //Ad Soyad
+            SqlCommand komut1 = new SqlCommand("select SekreterAdSoyad from Tbl_Sekreterler where SekreterTC = @SekreterTC", bgl.baglanti());
+            komut1.Parameters.AddWithValue("@SekreterTC", LblTC.Text);
+            SqlDataReader dr1 = komut1.ExecuteReader();
+            while (dr1.Read())
+            {
+                LblAdSoyad.Text = dr1[0].ToString();
+            }
+            bgl.baglanti().Close();
+
+            //Branşları DataGridView e aktarma
+            DataTable dt1 = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter("select BransAd * from Tbl_Branslar ", bgl.baglanti());
+            da.Fill(dt1);
+            dataGridView1.DataSource = dt1;
 
         }
 
@@ -98,6 +122,11 @@ namespace Proje_Hastane
         }
 
         private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
