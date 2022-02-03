@@ -39,7 +39,6 @@
             this.RchDuyuru = new System.Windows.Forms.RichTextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.BtnDuzenle = new System.Windows.Forms.Button();
-            this.BtnKaydet = new System.Windows.Forms.Button();
             this.ChkDurum = new System.Windows.Forms.CheckBox();
             this.MskTC = new System.Windows.Forms.MaskedTextBox();
             this.CmbDoktor = new System.Windows.Forms.ComboBox();
@@ -61,6 +60,7 @@
             this.BtnListe = new System.Windows.Forms.Button();
             this.BtnBransPanel = new System.Windows.Forms.Button();
             this.BtnDoktorPanel = new System.Windows.Forms.Button();
+            this.BtnKaydet = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -151,8 +151,8 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.BtnDuzenle);
             this.groupBox3.Controls.Add(this.BtnKaydet);
+            this.groupBox3.Controls.Add(this.BtnDuzenle);
             this.groupBox3.Controls.Add(this.ChkDurum);
             this.groupBox3.Controls.Add(this.MskTC);
             this.groupBox3.Controls.Add(this.CmbDoktor);
@@ -182,16 +182,6 @@
             this.BtnDuzenle.Text = "Düzenle";
             this.BtnDuzenle.UseVisualStyleBackColor = true;
             this.BtnDuzenle.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // BtnKaydet
-            // 
-            this.BtnKaydet.Location = new System.Drawing.Point(118, 327);
-            this.BtnKaydet.Name = "BtnKaydet";
-            this.BtnKaydet.Size = new System.Drawing.Size(143, 35);
-            this.BtnKaydet.TabIndex = 14;
-            this.BtnKaydet.Text = "Kaydet";
-            this.BtnKaydet.UseVisualStyleBackColor = true;
-            this.BtnKaydet.Click += new System.EventHandler(this.button2_Click);
             // 
             // ChkDurum
             // 
@@ -332,6 +322,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 30);
@@ -354,6 +345,7 @@
             // 
             // dataGridView2
             // 
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView2.Location = new System.Drawing.Point(3, 30);
@@ -401,6 +393,16 @@
             this.BtnDoktorPanel.TabIndex = 0;
             this.BtnDoktorPanel.Text = "Doktor Paneli";
             this.BtnDoktorPanel.UseVisualStyleBackColor = true;
+            // 
+            // BtnKaydet
+            // 
+            this.BtnKaydet.Location = new System.Drawing.Point(118, 327);
+            this.BtnKaydet.Name = "BtnKaydet";
+            this.BtnKaydet.Size = new System.Drawing.Size(143, 34);
+            this.BtnKaydet.TabIndex = 16;
+            this.BtnKaydet.Text = "Kaydet";
+            this.BtnKaydet.UseVisualStyleBackColor = true;
+            this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
             // FrmSekreterDetay
             // 
@@ -459,7 +461,6 @@
         private System.Windows.Forms.MaskedTextBox MskTarih;
         private System.Windows.Forms.TextBox Txtid;
         private System.Windows.Forms.Button BtnDuzenle;
-        private System.Windows.Forms.Button BtnKaydet;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox5;
@@ -468,5 +469,6 @@
         private System.Windows.Forms.Button BtnListe;
         private System.Windows.Forms.Button BtnBransPanel;
         private System.Windows.Forms.Button BtnDoktorPanel;
+        private System.Windows.Forms.Button BtnKaydet;
     }
 }

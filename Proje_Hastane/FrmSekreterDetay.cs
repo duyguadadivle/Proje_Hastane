@@ -43,12 +43,18 @@ namespace Proje_Hastane
             }
             bgl.baglanti().Close();
 
-            //Branşları DataGridView e aktarma
+            //Branşlar datagridView'e
             DataTable dt1 = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter("select BransAd * from Tbl_Branslar ", bgl.baglanti());
+            SqlDataAdapter da = new SqlDataAdapter("select * from Tbl_Branslar", bgl.baglanti());
             da.Fill(dt1);
             dataGridView1.DataSource = dt1;
 
+
+            //Doktorları listeye aktarma
+            DataTable dt2 = new DataTable();
+            SqlDataAdapter da2 = new SqlDataAdapter("select (DoktorAd + ' ' + DoktorSoyad) as Doktorlar, DoktorBrans from Tbl_Doktorlar", bgl.baglanti());
+            da2.Fill(dt2);
+            dataGridView2.DataSource = dt2;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -63,6 +69,7 @@ namespace Proje_Hastane
 
         private void button2_Click(object sender, EventArgs e)
         {
+           
 
         }
 
@@ -129,6 +136,11 @@ namespace Proje_Hastane
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void BtnKaydet_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
