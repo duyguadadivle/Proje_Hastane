@@ -55,6 +55,17 @@ namespace Proje_Hastane
             SqlDataAdapter da2 = new SqlDataAdapter("select (DoktorAd + ' ' + DoktorSoyad) as Doktorlar, DoktorBrans from Tbl_Doktorlar", bgl.baglanti());
             da2.Fill(dt2);
             dataGridView2.DataSource = dt2;
+
+
+            //Branşları comboboxa aktarma
+            SqlCommand komut2 = new SqlCommand("select BransAd from Tbl_Branslar", bgl.baglanti());
+            SqlDataReader dr2 = komut2.ExecuteReader();
+            while (dr2.Read())
+            {
+                CmbBrans.Items.Add(dr2[0]);
+            }
+            bgl.baglanti().Close();
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -90,7 +101,18 @@ namespace Proje_Hastane
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //brans
+            CmbDoktor.Items.Clear();
 
+            SqlCommand komut = new SqlCommand("select DoktorAd, DoktorSoyad from Tbl_Doktorlar where DoktorBrans = @DoktorBrans", bgl.baglanti());
+            komut.Parameters.AddWithValue("@DoktorBrans", CmbBrans.Text);
+            SqlDataReader dr = komut.ExecuteReader();
+            while (dr.Read())
+            {
+                CmbDoktor.Items.Add(dr[0] + " " + dr[1]);
+
+            }
+            bgl.baglanti().Close();
         }
 
         private void maskedTextBox2_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
@@ -140,7 +162,15 @@ namespace Proje_Hastane
 
         private void BtnKaydet_Click(object sender, EventArgs e)
         {
-            
+            //SqlCommand komutKaydet = new SqlCommand("insert into Tbl_Randevular (RandevuTarih, RandevuSaat, RandevuBrans, RandevuDoktor) values (@r1, @r2, r3, r4)", bgl.baglanti());
+            SqlCommand komutKaydet = new SqlCommand("insert into Tbl_Randevular (RandevuTarih, RandevuSaat, RandevuBrans, RandevuDoktor) values (@RandevuTarih, @RandevuSaat, @RandevuBrans, @RandevuDoktor)", bgl.baglanti());
+            komutKaydet.Parameters.AddWithValue("@RandevuTarih", MskTarih.Text);
+            komutKaydet.Parameters.AddWithValue("@RandevuSaat", MskSaat.Text);
+            komutKaydet.Parameters.AddWithValue("@RandevuBrans", CmbBrans.Text);
+            komutKaydet.Parameters.AddWithValue("@RandevuDoktor", CmbDoktor.Text);
+            komutKaydet.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Randevu oluşturuldu.");
         }
     }
 }
