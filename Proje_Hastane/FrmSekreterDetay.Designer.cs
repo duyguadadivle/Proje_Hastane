@@ -35,14 +35,13 @@
             this.LblTC = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.BtnDuyuruOlustur = new System.Windows.Forms.Button();
             this.RchDuyuru = new System.Windows.Forms.RichTextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.BtnKaydet = new System.Windows.Forms.Button();
             this.BtnDuzenle = new System.Windows.Forms.Button();
             this.ChkDurum = new System.Windows.Forms.CheckBox();
             this.MskTC = new System.Windows.Forms.MaskedTextBox();
             this.CmbDoktor = new System.Windows.Forms.ComboBox();
-            this.CmbBrans = new System.Windows.Forms.ComboBox();
             this.MskSaat = new System.Windows.Forms.MaskedTextBox();
             this.MskTarih = new System.Windows.Forms.MaskedTextBox();
             this.Txtid = new System.Windows.Forms.TextBox();
@@ -60,7 +59,8 @@
             this.BtnListe = new System.Windows.Forms.Button();
             this.BtnBransPanel = new System.Windows.Forms.Button();
             this.BtnDoktorPanel = new System.Windows.Forms.Button();
-            this.BtnKaydet = new System.Windows.Forms.Button();
+            this.CmbBrans = new System.Windows.Forms.ComboBox();
+            this.BtnDuyuruOlustur = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -131,16 +131,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Duyuru Oluştur";
             // 
-            // BtnDuyuruOlustur
-            // 
-            this.BtnDuyuruOlustur.Location = new System.Drawing.Point(6, 171);
-            this.BtnDuyuruOlustur.Name = "BtnDuyuruOlustur";
-            this.BtnDuyuruOlustur.Size = new System.Drawing.Size(304, 43);
-            this.BtnDuyuruOlustur.TabIndex = 3;
-            this.BtnDuyuruOlustur.Text = "Oluştur";
-            this.BtnDuyuruOlustur.UseVisualStyleBackColor = true;
-            this.BtnDuyuruOlustur.Click += new System.EventHandler(this.button1_Click);
-            // 
             // RchDuyuru
             // 
             this.RchDuyuru.Location = new System.Drawing.Point(6, 33);
@@ -151,12 +141,12 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.CmbBrans);
             this.groupBox3.Controls.Add(this.BtnKaydet);
             this.groupBox3.Controls.Add(this.BtnDuzenle);
             this.groupBox3.Controls.Add(this.ChkDurum);
             this.groupBox3.Controls.Add(this.MskTC);
             this.groupBox3.Controls.Add(this.CmbDoktor);
-            this.groupBox3.Controls.Add(this.CmbBrans);
             this.groupBox3.Controls.Add(this.MskSaat);
             this.groupBox3.Controls.Add(this.MskTarih);
             this.groupBox3.Controls.Add(this.Txtid);
@@ -172,6 +162,16 @@
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Randevu Paneli";
+            // 
+            // BtnKaydet
+            // 
+            this.BtnKaydet.Location = new System.Drawing.Point(118, 327);
+            this.BtnKaydet.Name = "BtnKaydet";
+            this.BtnKaydet.Size = new System.Drawing.Size(143, 34);
+            this.BtnKaydet.TabIndex = 16;
+            this.BtnKaydet.Text = "Kaydet";
+            this.BtnKaydet.UseVisualStyleBackColor = true;
+            this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
             // BtnDuzenle
             // 
@@ -212,15 +212,6 @@
             this.CmbDoktor.Size = new System.Drawing.Size(152, 35);
             this.CmbDoktor.TabIndex = 11;
             this.CmbDoktor.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
-            // 
-            // CmbBrans
-            // 
-            this.CmbBrans.FormattingEnabled = true;
-            this.CmbBrans.Location = new System.Drawing.Point(118, 167);
-            this.CmbBrans.Name = "CmbBrans";
-            this.CmbBrans.Size = new System.Drawing.Size(152, 35);
-            this.CmbBrans.TabIndex = 10;
-            this.CmbBrans.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // MskSaat
             // 
@@ -393,16 +384,26 @@
             this.BtnDoktorPanel.TabIndex = 0;
             this.BtnDoktorPanel.Text = "Doktor Paneli";
             this.BtnDoktorPanel.UseVisualStyleBackColor = true;
+            this.BtnDoktorPanel.Click += new System.EventHandler(this.BtnDoktorPanel_Click);
             // 
-            // BtnKaydet
+            // CmbBrans
             // 
-            this.BtnKaydet.Location = new System.Drawing.Point(118, 327);
-            this.BtnKaydet.Name = "BtnKaydet";
-            this.BtnKaydet.Size = new System.Drawing.Size(143, 34);
-            this.BtnKaydet.TabIndex = 16;
-            this.BtnKaydet.Text = "Kaydet";
-            this.BtnKaydet.UseVisualStyleBackColor = true;
-            this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
+            this.CmbBrans.FormattingEnabled = true;
+            this.CmbBrans.Location = new System.Drawing.Point(118, 167);
+            this.CmbBrans.Name = "CmbBrans";
+            this.CmbBrans.Size = new System.Drawing.Size(152, 35);
+            this.CmbBrans.TabIndex = 17;
+            this.CmbBrans.SelectedIndexChanged += new System.EventHandler(this.CmbBrans_SelectedIndexChanged);
+            // 
+            // BtnDuyuruOlustur
+            // 
+            this.BtnDuyuruOlustur.Location = new System.Drawing.Point(6, 171);
+            this.BtnDuyuruOlustur.Name = "BtnDuyuruOlustur";
+            this.BtnDuyuruOlustur.Size = new System.Drawing.Size(304, 43);
+            this.BtnDuyuruOlustur.TabIndex = 3;
+            this.BtnDuyuruOlustur.Text = "Oluştur";
+            this.BtnDuyuruOlustur.UseVisualStyleBackColor = true;
+            this.BtnDuyuruOlustur.Click += new System.EventHandler(this.button1_Click);
             // 
             // FrmSekreterDetay
             // 
@@ -444,7 +445,6 @@
         private System.Windows.Forms.Label LblTC;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button BtnDuyuruOlustur;
         private System.Windows.Forms.RichTextBox RchDuyuru;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label8;
@@ -456,7 +456,6 @@
         private System.Windows.Forms.CheckBox ChkDurum;
         private System.Windows.Forms.MaskedTextBox MskTC;
         private System.Windows.Forms.ComboBox CmbDoktor;
-        private System.Windows.Forms.ComboBox CmbBrans;
         private System.Windows.Forms.MaskedTextBox MskSaat;
         private System.Windows.Forms.MaskedTextBox MskTarih;
         private System.Windows.Forms.TextBox Txtid;
@@ -470,5 +469,7 @@
         private System.Windows.Forms.Button BtnBransPanel;
         private System.Windows.Forms.Button BtnDoktorPanel;
         private System.Windows.Forms.Button BtnKaydet;
+        private System.Windows.Forms.ComboBox CmbBrans;
+        private System.Windows.Forms.Button BtnDuyuruOlustur;
     }
 }

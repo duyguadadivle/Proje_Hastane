@@ -50,6 +50,7 @@ namespace Proje_Hastane
             dataGridView1.DataSource = dt1;
 
 
+
             //Doktorları listeye aktarma
             DataTable dt2 = new DataTable();
             SqlDataAdapter da2 = new SqlDataAdapter("select (DoktorAd + ' ' + DoktorSoyad) as Doktorlar, DoktorBrans from Tbl_Doktorlar", bgl.baglanti());
@@ -70,6 +71,13 @@ namespace Proje_Hastane
 
         private void button1_Click(object sender, EventArgs e)
         {
+            SqlCommand komut = new SqlCommand("insert into Tbl_Duyurular (duyuru) values (@Duyuru)", bgl.baglanti());
+            komut.Parameters.AddWithValue("@Duyuru", RchDuyuru.Text);
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Duyuru oluşturuldu.");
+
+
 
         }
 
@@ -99,21 +107,7 @@ namespace Proje_Hastane
 
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //brans
-            CmbDoktor.Items.Clear();
-
-            SqlCommand komut = new SqlCommand("select DoktorAd, DoktorSoyad from Tbl_Doktorlar where DoktorBrans = @DoktorBrans", bgl.baglanti());
-            komut.Parameters.AddWithValue("@DoktorBrans", CmbBrans.Text);
-            SqlDataReader dr = komut.ExecuteReader();
-            while (dr.Read())
-            {
-                CmbDoktor.Items.Add(dr[0] + " " + dr[1]);
-
-            }
-            bgl.baglanti().Close();
-        }
+        
 
         private void maskedTextBox2_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
@@ -171,6 +165,30 @@ namespace Proje_Hastane
             komutKaydet.ExecuteNonQuery();
             bgl.baglanti().Close();
             MessageBox.Show("Randevu oluşturuldu.");
+
+        }
+
+        private void CmbBrans_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ////brans
+            CmbDoktor.Items.Clear();
+
+            SqlCommand komut = new SqlCommand("select DoktorAd, DoktorSoyad from Tbl_Doktorlar where DoktorBrans = @DoktorBrans", bgl.baglanti());
+            komut.Parameters.AddWithValue("@DoktorBrans", CmbBrans.Text);
+            SqlDataReader dr = komut.ExecuteReader();
+            while (dr.Read())
+            {
+                CmbDoktor.Items.Add(dr[0] + " " + dr[1]);
+
+            }
+            bgl.baglanti().Close();
+        }
+
+        private void BtnDoktorPanel_Click(object sender, EventArgs e)
+        {
+            FrmDoktorPaneli drp = new FrmDoktorPaneli();
+            drp.Show();
+
         }
     }
 }

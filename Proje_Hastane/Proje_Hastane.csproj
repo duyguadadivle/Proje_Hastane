@@ -135,6 +135,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>HastaneProjeDBDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="HastaneProjeDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HastaneProjeDBDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="sqlbaglantisi.cs" />
@@ -199,6 +204,17 @@
     </None>
     <None Include="HastaneProjeDBDataSet.xss">
       <DependentUpon>HastaneProjeDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HastaneProjeDBDataSet1.xsc">
+      <DependentUpon>HastaneProjeDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="HastaneProjeDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HastaneProjeDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HastaneProjeDBDataSet1.xss">
+      <DependentUpon>HastaneProjeDBDataSet1.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

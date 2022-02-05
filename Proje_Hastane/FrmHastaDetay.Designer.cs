@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHastaDetay));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.LblAdSoyad = new System.Windows.Forms.Label();
@@ -35,6 +36,8 @@
             this.LblTC = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.Txtid = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.LnkBilgiDuzenle = new System.Windows.Forms.LinkLabel();
             this.BtnRandevuAl = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
@@ -47,14 +50,24 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.Txtid = new System.Windows.Forms.TextBox();
+            this.hastaneProjeDBDataSet1 = new Proje_Hastane.HastaneProjeDBDataSet1();
+            this.tblRandevularBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tbl_RandevularTableAdapter = new Proje_Hastane.HastaneProjeDBDataSet1TableAdapters.Tbl_RandevularTableAdapter();
+            this.randevuidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.randevuTarihDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.randevuSaatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.randevuBransDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.randevuDoktorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.randevuDurumDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.hastaTCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hastaneProjeDBDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblRandevularBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -125,6 +138,23 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Randevu Paneli:";
+            // 
+            // Txtid
+            // 
+            this.Txtid.Location = new System.Drawing.Point(101, 55);
+            this.Txtid.Name = "Txtid";
+            this.Txtid.Size = new System.Drawing.Size(206, 34);
+            this.Txtid.TabIndex = 1;
+            this.Txtid.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(51, 58);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(39, 27);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "id:";
             // 
             // LnkBilgiDuzenle
             // 
@@ -232,10 +262,21 @@
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Aktif Randevular";
+            this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
             // 
             // dataGridView2
             // 
+            this.dataGridView2.AutoGenerateColumns = false;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.randevuidDataGridViewTextBoxColumn,
+            this.randevuTarihDataGridViewTextBoxColumn,
+            this.randevuSaatDataGridViewTextBoxColumn,
+            this.randevuBransDataGridViewTextBoxColumn,
+            this.randevuDoktorDataGridViewTextBoxColumn,
+            this.randevuDurumDataGridViewCheckBoxColumn,
+            this.hastaTCDataGridViewTextBoxColumn});
+            this.dataGridView2.DataSource = this.tblRandevularBindingSource;
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView2.Location = new System.Drawing.Point(3, 30);
             this.dataGridView2.Name = "dataGridView2";
@@ -244,22 +285,76 @@
             this.dataGridView2.Size = new System.Drawing.Size(875, 310);
             this.dataGridView2.TabIndex = 0;
             // 
-            // label2
+            // hastaneProjeDBDataSet1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(51, 58);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 27);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "id:";
+            this.hastaneProjeDBDataSet1.DataSetName = "HastaneProjeDBDataSet1";
+            this.hastaneProjeDBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // Txtid
+            // tblRandevularBindingSource
             // 
-            this.Txtid.Location = new System.Drawing.Point(101, 55);
-            this.Txtid.Name = "Txtid";
-            this.Txtid.Size = new System.Drawing.Size(206, 34);
-            this.Txtid.TabIndex = 1;
-            this.Txtid.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.tblRandevularBindingSource.DataMember = "Tbl_Randevular";
+            this.tblRandevularBindingSource.DataSource = this.hastaneProjeDBDataSet1;
+            // 
+            // tbl_RandevularTableAdapter
+            // 
+            this.tbl_RandevularTableAdapter.ClearBeforeFill = true;
+            // 
+            // randevuidDataGridViewTextBoxColumn
+            // 
+            this.randevuidDataGridViewTextBoxColumn.DataPropertyName = "Randevuid";
+            this.randevuidDataGridViewTextBoxColumn.HeaderText = "Randevuid";
+            this.randevuidDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.randevuidDataGridViewTextBoxColumn.Name = "randevuidDataGridViewTextBoxColumn";
+            this.randevuidDataGridViewTextBoxColumn.ReadOnly = true;
+            this.randevuidDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // randevuTarihDataGridViewTextBoxColumn
+            // 
+            this.randevuTarihDataGridViewTextBoxColumn.DataPropertyName = "RandevuTarih";
+            this.randevuTarihDataGridViewTextBoxColumn.HeaderText = "RandevuTarih";
+            this.randevuTarihDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.randevuTarihDataGridViewTextBoxColumn.Name = "randevuTarihDataGridViewTextBoxColumn";
+            this.randevuTarihDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // randevuSaatDataGridViewTextBoxColumn
+            // 
+            this.randevuSaatDataGridViewTextBoxColumn.DataPropertyName = "RandevuSaat";
+            this.randevuSaatDataGridViewTextBoxColumn.HeaderText = "RandevuSaat";
+            this.randevuSaatDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.randevuSaatDataGridViewTextBoxColumn.Name = "randevuSaatDataGridViewTextBoxColumn";
+            this.randevuSaatDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // randevuBransDataGridViewTextBoxColumn
+            // 
+            this.randevuBransDataGridViewTextBoxColumn.DataPropertyName = "RandevuBrans";
+            this.randevuBransDataGridViewTextBoxColumn.HeaderText = "RandevuBrans";
+            this.randevuBransDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.randevuBransDataGridViewTextBoxColumn.Name = "randevuBransDataGridViewTextBoxColumn";
+            this.randevuBransDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // randevuDoktorDataGridViewTextBoxColumn
+            // 
+            this.randevuDoktorDataGridViewTextBoxColumn.DataPropertyName = "RandevuDoktor";
+            this.randevuDoktorDataGridViewTextBoxColumn.HeaderText = "RandevuDoktor";
+            this.randevuDoktorDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.randevuDoktorDataGridViewTextBoxColumn.Name = "randevuDoktorDataGridViewTextBoxColumn";
+            this.randevuDoktorDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // randevuDurumDataGridViewCheckBoxColumn
+            // 
+            this.randevuDurumDataGridViewCheckBoxColumn.DataPropertyName = "RandevuDurum";
+            this.randevuDurumDataGridViewCheckBoxColumn.HeaderText = "RandevuDurum";
+            this.randevuDurumDataGridViewCheckBoxColumn.MinimumWidth = 6;
+            this.randevuDurumDataGridViewCheckBoxColumn.Name = "randevuDurumDataGridViewCheckBoxColumn";
+            this.randevuDurumDataGridViewCheckBoxColumn.Width = 125;
+            // 
+            // hastaTCDataGridViewTextBoxColumn
+            // 
+            this.hastaTCDataGridViewTextBoxColumn.DataPropertyName = "HastaTC";
+            this.hastaTCDataGridViewTextBoxColumn.HeaderText = "HastaTC";
+            this.hastaTCDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.hastaTCDataGridViewTextBoxColumn.Name = "hastaTCDataGridViewTextBoxColumn";
+            this.hastaTCDataGridViewTextBoxColumn.Width = 125;
             // 
             // FrmHastaDetay
             // 
@@ -285,6 +380,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hastaneProjeDBDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblRandevularBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -311,5 +408,15 @@
         private System.Windows.Forms.LinkLabel LnkBilgiDuzenle;
         private System.Windows.Forms.TextBox Txtid;
         private System.Windows.Forms.Label label2;
+        private HastaneProjeDBDataSet1 hastaneProjeDBDataSet1;
+        private System.Windows.Forms.BindingSource tblRandevularBindingSource;
+        private HastaneProjeDBDataSet1TableAdapters.Tbl_RandevularTableAdapter tbl_RandevularTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn randevuidDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn randevuTarihDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn randevuSaatDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn randevuBransDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn randevuDoktorDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn randevuDurumDataGridViewCheckBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hastaTCDataGridViewTextBoxColumn;
     }
 }

@@ -35,8 +35,13 @@ namespace Proje_Hastane
 
         private void FrmHastaDetay_Load(object sender, EventArgs e)
         {
+            /*
+            // TODO: This line of code loads data into the 'hastaneProjeDBDataSet1.Tbl_Randevular' table. You can move, or remove it, as needed.
+            this.tbl_RandevularTableAdapter.Fill(this.hastaneProjeDBDataSet1.Tbl_Randevular);
             LblTC.Text = tc;
-
+            */
+            ////////seçilen doktor ve branşa göre datagridviewe listeleme yapmak lazım
+           
 
             //Ad Soyad veri çek
             SqlCommand komut = new SqlCommand("select HastaAd, HastaSoyad from Tbl_Hastalar where HastaTC = @HastaTC", bgl.baglanti());
@@ -55,6 +60,7 @@ namespace Proje_Hastane
             SqlDataAdapter da = new SqlDataAdapter("select * from Tbl_Randevular where HastaTC = " + tc, bgl.baglanti());
             da.Fill(dt);
             dataGridView1.DataSource = dt;
+
 
             //Branşları çekme
             SqlCommand komut2 = new SqlCommand("select BransAd from Tbl_Branslar", bgl.baglanti());
@@ -107,6 +113,11 @@ namespace Proje_Hastane
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox4_Enter(object sender, EventArgs e)
         {
 
         }
