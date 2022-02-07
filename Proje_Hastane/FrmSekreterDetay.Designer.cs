@@ -40,7 +40,6 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.CmbBrans = new System.Windows.Forms.ComboBox();
             this.BtnKaydet = new System.Windows.Forms.Button();
-            this.BtnDuzenle = new System.Windows.Forms.Button();
             this.ChkDurum = new System.Windows.Forms.CheckBox();
             this.MskTC = new System.Windows.Forms.MaskedTextBox();
             this.CmbDoktor = new System.Windows.Forms.ComboBox();
@@ -154,7 +153,6 @@
             // 
             this.groupBox3.Controls.Add(this.CmbBrans);
             this.groupBox3.Controls.Add(this.BtnKaydet);
-            this.groupBox3.Controls.Add(this.BtnDuzenle);
             this.groupBox3.Controls.Add(this.ChkDurum);
             this.groupBox3.Controls.Add(this.MskTC);
             this.groupBox3.Controls.Add(this.CmbDoktor);
@@ -173,6 +171,7 @@
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Randevu Paneli";
+            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // CmbBrans
             // 
@@ -192,16 +191,6 @@
             this.BtnKaydet.Text = "Kaydet";
             this.BtnKaydet.UseVisualStyleBackColor = true;
             this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
-            // 
-            // BtnDuzenle
-            // 
-            this.BtnDuzenle.Location = new System.Drawing.Point(118, 367);
-            this.BtnDuzenle.Name = "BtnDuzenle";
-            this.BtnDuzenle.Size = new System.Drawing.Size(143, 35);
-            this.BtnDuzenle.TabIndex = 15;
-            this.BtnDuzenle.Text = "Düzenle";
-            this.BtnDuzenle.UseVisualStyleBackColor = true;
-            this.BtnDuzenle.Click += new System.EventHandler(this.button3_Click);
             // 
             // ChkDurum
             // 
@@ -386,6 +375,7 @@
             this.BtnListe.TabIndex = 2;
             this.BtnListe.Text = "Randevu Liste";
             this.BtnListe.UseVisualStyleBackColor = true;
+            this.BtnListe.Click += new System.EventHandler(this.BtnListe_Click);
             // 
             // BtnBransPanel
             // 
@@ -411,6 +401,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(868, 644);
             this.Controls.Add(this.groupBox6);
@@ -422,8 +413,9 @@
             this.Font = new System.Drawing.Font("Georgia", 13.8F);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
+            this.MaximizeBox = false;
             this.Name = "FrmSekreterDetay";
-            this.Text = "FrmSekreterDetay";
+            this.Text = "Sekreter Detay";
             this.Load += new System.EventHandler(this.FrmSekreterDetay_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -461,7 +453,6 @@
         private System.Windows.Forms.MaskedTextBox MskSaat;
         private System.Windows.Forms.MaskedTextBox MskTarih;
         private System.Windows.Forms.TextBox Txtid;
-        private System.Windows.Forms.Button BtnDuzenle;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox5;

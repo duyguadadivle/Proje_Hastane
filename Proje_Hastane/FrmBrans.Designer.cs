@@ -131,7 +131,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmBrans";
-            this.Text = "Brans Paneli";
+            this.Text = "Branş Paneli";
             this.Load += new System.EventHandler(this.FrmBrans_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
