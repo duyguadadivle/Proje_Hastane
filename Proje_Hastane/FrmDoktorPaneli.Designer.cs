@@ -148,6 +148,7 @@
             this.BtnSil.TabIndex = 28;
             this.BtnSil.Text = "Sil";
             this.BtnSil.UseVisualStyleBackColor = true;
+            this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
             // 
             // BtnGuncelle
             // 
@@ -157,6 +158,7 @@
             this.BtnGuncelle.TabIndex = 29;
             this.BtnGuncelle.Text = "Güncelle";
             this.BtnGuncelle.UseVisualStyleBackColor = true;
+            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
             // BtnEkle
             // 

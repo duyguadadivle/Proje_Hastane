@@ -190,5 +190,10 @@ namespace Proje_Hastane
             drp.Show();
 
         }
+
+        private void LblTC_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

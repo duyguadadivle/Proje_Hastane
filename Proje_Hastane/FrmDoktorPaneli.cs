@@ -35,20 +35,30 @@ namespace Proje_Hastane
             SqlDataAdapter da1 = new SqlDataAdapter("select * from Tbl_Doktorlar", bgl.baglanti());
             da1.Fill(dt1);
             dataGridView1.DataSource = dt1;
+
+
+            ///Branları comboboxa aktarma
+            SqlCommand komut2 = new SqlCommand("select BransAd from Tbl_Branslar", bgl.baglanti());
+            SqlDataReader dr2 = komut2.ExecuteReader();
+            while (dr2.Read())
+            {
+                CmbBrans.Items.Add(dr2[0]);
+            }
+            bgl.baglanti().Close();
         }
 
         private void BtnEkle_Click(object sender, EventArgs e)
         {
-            //SqlCommand komut = new SqlCommand("insert into Tbl_Doktorlar (DoktorAd, DoktorSoyad, DoktorBrans, DoktorTC, DoktorSifre) values (@DoktorAd, @DoktorSoyad, @DoktorBrans, @DoktorTC, @DoktorSifre)", bgl.baglanti());
-            //komut.Parameters.AddWithValue("@DoktorAd", TxtAd.Text);
-            //komut.Parameters.AddWithValue("@DoktorSoyad", TxtSoyad.Text);
-            //komut.Parameters.AddWithValue("@DoktorBrans", CmbBrans.Text);
-            //komut.Parameters.AddWithValue("@DoktorTC", MskTC.Text);
-            //komut.Parameters.AddWithValue("@DoktorSifre", TxtSifre.Text);
-            //komut.ExecuteNonQuery();
-            //bgl.baglanti().Close();
+            SqlCommand komut = new SqlCommand("insert into Tbl_Doktorlar (DoktorAd, DoktorSoyad, DoktorBrans, DoktorTC, DoktorSifre) values (@DoktorAd, @DoktorSoyad, @DoktorBrans, @DoktorTC, @DoktorSifre)", bgl.baglanti());
+            komut.Parameters.AddWithValue("@DoktorAd", TxtAd.Text);
+            komut.Parameters.AddWithValue("@DoktorSoyad", TxtSoyad.Text);
+            komut.Parameters.AddWithValue("@DoktorBrans", CmbBrans.Text);
+            komut.Parameters.AddWithValue("@DoktorTC", MskTC.Text);
+            komut.Parameters.AddWithValue("@DoktorSifre", TxtSifre.Text);
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Doktor eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            //MessageBox.Show("Doktor Eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -60,6 +70,30 @@ namespace Proje_Hastane
             MskTC.Text = dataGridView1.Rows[secilen].Cells[4].Value.ToString();
             TxtSifre.Text = dataGridView1.Rows[secilen].Cells[5].Value.ToString();
 
+        }
+
+        private void BtnSil_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("delete from Tbl_Doktorlar where DoktorTC = @DoktorTC", bgl.baglanti());
+            komut.Parameters.AddWithValue("@DoktorTC", MskTC.Text);
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Kayıt silindi", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+
+
+        }
+
+        private void BtnGuncelle_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("update Tbl_Doktorlar set DoktorAd = @DoktorAd, DoktorSoyad = @DoktorSoyad, DoktorBrans = @DoktorBrans, DoktorSifre = @DoktorSifre where DoktorTC = @DoktorTC", bgl.baglanti());
+            komut.Parameters.AddWithValue("@DoktorAd", TxtAd.Text);
+            komut.Parameters.AddWithValue("@DoktorSoyad", TxtSoyad.Text);
+            komut.Parameters.AddWithValue("@DoktorBrans", CmbBrans.Text);
+            komut.Parameters.AddWithValue("@DoktorTC", MskTC.Text);
+            komut.Parameters.AddWithValue("@DoktorSifre", TxtSifre.Text);
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Doktor güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
