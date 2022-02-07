@@ -217,5 +217,11 @@ namespace Proje_Hastane
         {
             
         }
+
+        private void BtnDuyurular_Click(object sender, EventArgs e)
+        {
+            FrmDuyurular fr = new FrmDuyurular();
+            fr.Show();
+        }
     }
 }
