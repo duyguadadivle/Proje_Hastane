@@ -56,10 +56,10 @@ namespace Proje_Hastane
 
             //Randevu geçmişi
 
-            DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter("select * from Tbl_Randevular where HastaTC = " + tc, bgl.baglanti());
-            da.Fill(dt);
-            dataGridView1.DataSource = dt;
+            //DataTable dt = new DataTable();
+            //SqlDataAdapter da = new SqlDataAdapter("select * from Tbl_Randevular where HastaTC = " + tc, bgl.baglanti());
+            //da.Fill(dt);
+            //dataGridView1.DataSource = dt;
 
 
             //Branşları çekme
@@ -88,16 +88,31 @@ namespace Proje_Hastane
 
         private void CmbDoktor_SelectedIndexChanged(object sender, EventArgs e)
         {
-            DataTable dt = new DataTable();
+            /*DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter("select * from Tbl_Randevular where RandevuBrans = ' "+ CmbBrans.Text + "' ", bgl.baglanti());
             da.Fill(dt);
+            dataGridView2.DataSource = dt;*/
+
+            DataTable dt = new DataTable();
+            //SqlDataAdapter da = new SqlDataAdapter("select * from Tbl_Randevular where RandevuBrans = '" + CmbBrans.Text + "'" + " and RandevuDoktor = '" + CmbDoktor.Text + "'", bgl.baglanti());
+            SqlDataAdapter da = new SqlDataAdapter("select * from Tbl_Randevular where RandevuBrans = '" + CmbBrans.Text + "'" + " and RandevuDoktor = '" + CmbDoktor.Text + "' and RandevuDurum = 0", bgl.baglanti());
+            da.Fill(dt);
             dataGridView2.DataSource = dt;
+
+
 
         }
 
         private void BtnRandevuAl_Click(object sender, EventArgs e)
         {
-
+            SqlCommand komut = new SqlCommand("update Tbl_Randevular set RandevuDurum = 1, HastaTC = @HastaTC, HastaSikayet = @HastaSikayet where Randevuid = @Randevuid", bgl.baglanti());
+            komut.Parameters.AddWithValue("@HastaTC", LblTC.Text);
+            komut.Parameters.AddWithValue("@HastaSikayet", RchSikayet.Text);
+            komut.Parameters.AddWithValue("@Randevuid", Txtid.Text);
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Randevu alındı", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+          
         }
 
         private void LnkBilgiDuzenle_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -119,6 +134,13 @@ namespace Proje_Hastane
 
         private void groupBox4_Enter(object sender, EventArgs e)
         {
+
+        }
+
+        private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int secilen = dataGridView2.SelectedCells[0].RowIndex;
+            Txtid.Text = dataGridView2.Rows[secilen].Cells[0].Value.ToString();
 
         }
     }

@@ -50,9 +50,6 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.hastaneProjeDBDataSet1 = new Proje_Hastane.HastaneProjeDBDataSet1();
-            this.tblRandevularBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tbl_RandevularTableAdapter = new Proje_Hastane.HastaneProjeDBDataSet1TableAdapters.Tbl_RandevularTableAdapter();
             this.randevuidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.randevuTarihDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.randevuSaatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -60,14 +57,17 @@
             this.randevuDoktorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.randevuDurumDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.hastaTCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tblRandevularBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.hastaneProjeDBDataSet1 = new Proje_Hastane.HastaneProjeDBDataSet1();
+            this.tbl_RandevularTableAdapter = new Proje_Hastane.HastaneProjeDBDataSet1TableAdapters.Tbl_RandevularTableAdapter();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hastaneProjeDBDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblRandevularBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hastaneProjeDBDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -141,6 +141,7 @@
             // 
             // Txtid
             // 
+            this.Txtid.Enabled = false;
             this.Txtid.Location = new System.Drawing.Point(101, 55);
             this.Txtid.Name = "Txtid";
             this.Txtid.Size = new System.Drawing.Size(206, 34);
@@ -284,20 +285,7 @@
             this.dataGridView2.RowTemplate.Height = 24;
             this.dataGridView2.Size = new System.Drawing.Size(875, 310);
             this.dataGridView2.TabIndex = 0;
-            // 
-            // hastaneProjeDBDataSet1
-            // 
-            this.hastaneProjeDBDataSet1.DataSetName = "HastaneProjeDBDataSet1";
-            this.hastaneProjeDBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblRandevularBindingSource
-            // 
-            this.tblRandevularBindingSource.DataMember = "Tbl_Randevular";
-            this.tblRandevularBindingSource.DataSource = this.hastaneProjeDBDataSet1;
-            // 
-            // tbl_RandevularTableAdapter
-            // 
-            this.tbl_RandevularTableAdapter.ClearBeforeFill = true;
+            this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
             // 
             // randevuidDataGridViewTextBoxColumn
             // 
@@ -356,6 +344,20 @@
             this.hastaTCDataGridViewTextBoxColumn.Name = "hastaTCDataGridViewTextBoxColumn";
             this.hastaTCDataGridViewTextBoxColumn.Width = 125;
             // 
+            // tblRandevularBindingSource
+            // 
+            this.tblRandevularBindingSource.DataMember = "Tbl_Randevular";
+            this.tblRandevularBindingSource.DataSource = this.hastaneProjeDBDataSet1;
+            // 
+            // hastaneProjeDBDataSet1
+            // 
+            this.hastaneProjeDBDataSet1.DataSetName = "HastaneProjeDBDataSet1";
+            this.hastaneProjeDBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tbl_RandevularTableAdapter
+            // 
+            this.tbl_RandevularTableAdapter.ClearBeforeFill = true;
+            // 
             // FrmHastaDetay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 27F);
@@ -380,8 +382,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hastaneProjeDBDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblRandevularBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hastaneProjeDBDataSet1)).EndInit();
             this.ResumeLayout(false);
 
         }

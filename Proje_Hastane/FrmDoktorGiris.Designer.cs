@@ -45,6 +45,7 @@
             this.BtnGirisYap.TabIndex = 13;
             this.BtnGirisYap.Text = "Giriş";
             this.BtnGirisYap.UseVisualStyleBackColor = true;
+            this.BtnGirisYap.Click += new System.EventHandler(this.BtnGirisYap_Click);
             // 
             // TxtSifre
             // 

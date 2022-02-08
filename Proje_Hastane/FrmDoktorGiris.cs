@@ -16,5 +16,10 @@ namespace Proje_Hastane
         {
             InitializeComponent();
         }
+
+        private void BtnGirisYap_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
