@@ -56,7 +56,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmRandevuListesi";
-            this.Text = "FrmRandevuListesi";
+            this.Text = "Randevu Listesi";
             this.Load += new System.EventHandler(this.FrmRandevuListesi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
