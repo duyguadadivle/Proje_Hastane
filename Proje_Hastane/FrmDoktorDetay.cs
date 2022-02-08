@@ -41,9 +41,17 @@ namespace Proje_Hastane
             {
                 LblAdSoyad.Text = dr[0] + " " + dr[1];
             }
-            bgl.baglanti();
+            bgl.baglanti().Close();
 
-            
+
+            //Randevular
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter("select * from Tbl_Randevular where RandevuDoktor = '" + LblAdSoyad.Text + "'", bgl.baglanti());
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+
+          
+
         }
     }
 }
