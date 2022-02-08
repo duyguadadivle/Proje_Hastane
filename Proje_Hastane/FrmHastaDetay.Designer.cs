@@ -233,10 +233,11 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.groupBox3.Controls.Add(this.dataGridView1);
             this.groupBox3.Location = new System.Drawing.Point(359, 23);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(881, 240);
+            this.groupBox3.Size = new System.Drawing.Size(1295, 240);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Randevu Geçmişi";
@@ -244,13 +245,14 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 30);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(875, 207);
+            this.dataGridView1.Size = new System.Drawing.Size(1289, 207);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -259,7 +261,7 @@
             this.groupBox4.Controls.Add(this.dataGridView2);
             this.groupBox4.Location = new System.Drawing.Point(359, 278);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(881, 343);
+            this.groupBox4.Size = new System.Drawing.Size(1295, 343);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Aktif Randevular";
@@ -268,6 +270,7 @@
             // dataGridView2
             // 
             this.dataGridView2.AutoGenerateColumns = false;
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.randevuidDataGridViewTextBoxColumn,
@@ -283,7 +286,7 @@
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(875, 310);
+            this.dataGridView2.Size = new System.Drawing.Size(1289, 310);
             this.dataGridView2.TabIndex = 0;
             this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
             // 
@@ -294,7 +297,6 @@
             this.randevuidDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.randevuidDataGridViewTextBoxColumn.Name = "randevuidDataGridViewTextBoxColumn";
             this.randevuidDataGridViewTextBoxColumn.ReadOnly = true;
-            this.randevuidDataGridViewTextBoxColumn.Width = 125;
             // 
             // randevuTarihDataGridViewTextBoxColumn
             // 
@@ -302,7 +304,6 @@
             this.randevuTarihDataGridViewTextBoxColumn.HeaderText = "RandevuTarih";
             this.randevuTarihDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.randevuTarihDataGridViewTextBoxColumn.Name = "randevuTarihDataGridViewTextBoxColumn";
-            this.randevuTarihDataGridViewTextBoxColumn.Width = 125;
             // 
             // randevuSaatDataGridViewTextBoxColumn
             // 
@@ -310,7 +311,6 @@
             this.randevuSaatDataGridViewTextBoxColumn.HeaderText = "RandevuSaat";
             this.randevuSaatDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.randevuSaatDataGridViewTextBoxColumn.Name = "randevuSaatDataGridViewTextBoxColumn";
-            this.randevuSaatDataGridViewTextBoxColumn.Width = 125;
             // 
             // randevuBransDataGridViewTextBoxColumn
             // 
@@ -318,7 +318,6 @@
             this.randevuBransDataGridViewTextBoxColumn.HeaderText = "RandevuBrans";
             this.randevuBransDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.randevuBransDataGridViewTextBoxColumn.Name = "randevuBransDataGridViewTextBoxColumn";
-            this.randevuBransDataGridViewTextBoxColumn.Width = 125;
             // 
             // randevuDoktorDataGridViewTextBoxColumn
             // 
@@ -326,7 +325,6 @@
             this.randevuDoktorDataGridViewTextBoxColumn.HeaderText = "RandevuDoktor";
             this.randevuDoktorDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.randevuDoktorDataGridViewTextBoxColumn.Name = "randevuDoktorDataGridViewTextBoxColumn";
-            this.randevuDoktorDataGridViewTextBoxColumn.Width = 125;
             // 
             // randevuDurumDataGridViewCheckBoxColumn
             // 
@@ -334,7 +332,6 @@
             this.randevuDurumDataGridViewCheckBoxColumn.HeaderText = "RandevuDurum";
             this.randevuDurumDataGridViewCheckBoxColumn.MinimumWidth = 6;
             this.randevuDurumDataGridViewCheckBoxColumn.Name = "randevuDurumDataGridViewCheckBoxColumn";
-            this.randevuDurumDataGridViewCheckBoxColumn.Width = 125;
             // 
             // hastaTCDataGridViewTextBoxColumn
             // 
@@ -342,7 +339,6 @@
             this.hastaTCDataGridViewTextBoxColumn.HeaderText = "HastaTC";
             this.hastaTCDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.hastaTCDataGridViewTextBoxColumn.Name = "hastaTCDataGridViewTextBoxColumn";
-            this.hastaTCDataGridViewTextBoxColumn.Width = 125;
             // 
             // tblRandevularBindingSource
             // 
@@ -363,7 +359,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
-            this.ClientSize = new System.Drawing.Size(1252, 651);
+            this.ClientSize = new System.Drawing.Size(1924, 651);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
