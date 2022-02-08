@@ -53,5 +53,13 @@ namespace Proje_Hastane
           
 
         }
+
+        private void BtnGuncelle_Click(object sender, EventArgs e)
+        {
+            FrmDoktorBilgiDuzenle fr = new FrmDoktorBilgiDuzenle();
+            fr.tc = LblTC.Text;
+            fr.Show();
+
+        }
     }
 }

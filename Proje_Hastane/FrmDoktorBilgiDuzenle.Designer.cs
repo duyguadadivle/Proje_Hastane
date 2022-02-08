@@ -49,6 +49,7 @@
             this.BtnBilgileriGuncelle.TabIndex = 6;
             this.BtnBilgileriGuncelle.Text = "Güncelle";
             this.BtnBilgileriGuncelle.UseVisualStyleBackColor = true;
+            this.BtnBilgileriGuncelle.Click += new System.EventHandler(this.BtnBilgileriGuncelle_Click);
             // 
             // TxtAd
             // 
@@ -150,9 +151,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Font = new System.Drawing.Font("Georgia", 13.8F);
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmDoktorBilgiDuzenle";
             this.Text = "FrmDoktorBilgiDuzenle";
+            this.Load += new System.EventHandler(this.FrmDoktorBilgiDuzenle_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
