@@ -50,7 +50,7 @@ namespace Proje_Hastane
             komut.Parameters.AddWithValue("@DoktorTC", MskTC.Text);
             komut.ExecuteNonQuery();
             bgl.baglanti().Close();
-            MessageBox.Show("Kayıt güncellenlendi.");
+            MessageBox.Show("Kayıt güncellendi.");
 
         }
     }

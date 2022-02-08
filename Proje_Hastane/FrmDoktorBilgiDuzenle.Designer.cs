@@ -153,7 +153,7 @@
             this.Font = new System.Drawing.Font("Georgia", 13.8F);
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmDoktorBilgiDuzenle";
-            this.Text = "FrmDoktorBilgiDuzenle";
+            this.Text = "Doktor Bilgi Düzenle";
             this.Load += new System.EventHandler(this.FrmDoktorBilgiDuzenle_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

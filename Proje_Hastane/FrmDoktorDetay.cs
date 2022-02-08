@@ -61,5 +61,22 @@ namespace Proje_Hastane
             fr.Show();
 
         }
+
+        private void BtnDuyurular_Click(object sender, EventArgs e)
+        {
+            FrmDuyurular fr = new FrmDuyurular();
+            fr.Show();
+        }
+
+        private void BtnCikis_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int secilen = dataGridView1.SelectedCells[0].RowIndex;
+            RchSikayet.Text = dataGridView1.Rows[secilen].Cells[7].Value.ToString();
+        }
     }
 }
