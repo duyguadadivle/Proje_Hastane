@@ -51,6 +51,7 @@
             // 
             this.TxtSifre.Location = new System.Drawing.Point(225, 188);
             this.TxtSifre.Name = "TxtSifre";
+            this.TxtSifre.PasswordChar = '*';
             this.TxtSifre.Size = new System.Drawing.Size(204, 34);
             this.TxtSifre.TabIndex = 2;
             // 
@@ -92,8 +93,10 @@
             // 
             // FrmDoktorGiris
             // 
+            this.AcceptButton = this.BtnGirisYap;
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(607, 376);
             this.Controls.Add(this.BtnGirisYap);
@@ -107,6 +110,7 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmDoktorGiris";
             this.Text = "FrmDoktorGiris";
+            this.Load += new System.EventHandler(this.FrmDoktorGiris_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDoktorDetay));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.LblAdSoyad = new System.Windows.Forms.Label();
@@ -42,11 +43,15 @@
             this.BtnCikis = new System.Windows.Forms.Button();
             this.BtnDuyurular = new System.Windows.Forms.Button();
             this.BtnGuncelle = new System.Windows.Forms.Button();
+            this.hastaneProjeDBDataSet = new Proje_Hastane.HastaneProjeDBDataSet();
+            this.hastaneProjeDBDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hastaneProjeDBDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hastaneProjeDBDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -177,6 +182,16 @@
             this.BtnGuncelle.Text = "Bilgi Düzenle";
             this.BtnGuncelle.UseVisualStyleBackColor = true;
             // 
+            // hastaneProjeDBDataSet
+            // 
+            this.hastaneProjeDBDataSet.DataSetName = "HastaneProjeDBDataSet";
+            this.hastaneProjeDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // hastaneProjeDBDataSetBindingSource
+            // 
+            this.hastaneProjeDBDataSetBindingSource.DataSource = this.hastaneProjeDBDataSet;
+            this.hastaneProjeDBDataSetBindingSource.Position = 0;
+            // 
             // FrmDoktorDetay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 27F);
@@ -192,12 +207,15 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmDoktorDetay";
             this.Text = "FrmDoktorDetay";
+            this.Load += new System.EventHandler(this.FrmDoktorDetay_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.hastaneProjeDBDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hastaneProjeDBDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -217,5 +235,7 @@
         private System.Windows.Forms.Button BtnCikis;
         private System.Windows.Forms.Button BtnDuyurular;
         private System.Windows.Forms.Button BtnGuncelle;
+        private System.Windows.Forms.BindingSource hastaneProjeDBDataSetBindingSource;
+        private HastaneProjeDBDataSet hastaneProjeDBDataSet;
     }
 }
