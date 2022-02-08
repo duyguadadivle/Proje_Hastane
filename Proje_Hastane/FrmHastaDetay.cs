@@ -41,7 +41,8 @@ namespace Proje_Hastane
             LblTC.Text = tc;
             */
             ////////seçilen doktor ve branşa göre datagridviewe listeleme yapmak lazım
-           
+
+            LblTC.Text = tc;
 
             //Ad Soyad veri çek
             SqlCommand komut = new SqlCommand("select HastaAd, HastaSoyad from Tbl_Hastalar where HastaTC = @HastaTC", bgl.baglanti());
@@ -60,7 +61,12 @@ namespace Proje_Hastane
             //SqlDataAdapter da = new SqlDataAdapter("select * from Tbl_Randevular where HastaTC = " + tc, bgl.baglanti());
             //da.Fill(dt);
             //dataGridView1.DataSource = dt;
-
+            
+            ///// Radevu geçmişi error fixed
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter("select * from Tbl_Randevular where HastaTC = '" + LblTC.Text + "'", bgl.baglanti());
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
 
             //Branşları çekme
             SqlCommand komut2 = new SqlCommand("select BransAd from Tbl_Branslar", bgl.baglanti());
