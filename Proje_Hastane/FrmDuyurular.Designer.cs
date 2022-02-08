@@ -42,7 +42,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(528, 371);
+            this.dataGridView1.Size = new System.Drawing.Size(1007, 371);
             this.dataGridView1.TabIndex = 0;
             // 
             // FrmDuyurular
@@ -50,7 +50,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(528, 371);
+            this.ClientSize = new System.Drawing.Size(1007, 371);
             this.Controls.Add(this.dataGridView1);
             this.Font = new System.Drawing.Font("Georgia", 13.8F);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

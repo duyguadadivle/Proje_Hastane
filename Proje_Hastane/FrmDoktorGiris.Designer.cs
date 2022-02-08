@@ -51,9 +51,9 @@
             // 
             this.TxtSifre.Location = new System.Drawing.Point(225, 188);
             this.TxtSifre.Name = "TxtSifre";
-            this.TxtSifre.PasswordChar = '*';
             this.TxtSifre.Size = new System.Drawing.Size(204, 34);
             this.TxtSifre.TabIndex = 2;
+            this.TxtSifre.UseSystemPasswordChar = true;
             // 
             // MskTC
             // 

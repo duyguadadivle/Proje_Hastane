@@ -42,7 +42,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(675, 530);
+            this.dataGridView1.Size = new System.Drawing.Size(986, 530);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
@@ -50,7 +50,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(675, 530);
+            this.ClientSize = new System.Drawing.Size(986, 530);
             this.Controls.Add(this.dataGridView1);
             this.Font = new System.Drawing.Font("Georgia", 13.8F);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

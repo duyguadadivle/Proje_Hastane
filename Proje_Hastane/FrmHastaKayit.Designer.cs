@@ -50,6 +50,7 @@
             this.TxtSifre.Name = "TxtSifre";
             this.TxtSifre.Size = new System.Drawing.Size(204, 34);
             this.TxtSifre.TabIndex = 5;
+            this.TxtSifre.UseSystemPasswordChar = true;
             // 
             // MskTC
             // 
