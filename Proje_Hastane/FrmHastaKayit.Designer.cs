@@ -121,7 +121,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(76, 232);
+            this.label5.Location = new System.Drawing.Point(69, 232);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(102, 27);
             this.label5.TabIndex = 14;
@@ -162,7 +162,7 @@
             this.AcceptButton = this.BtnKayitYap;
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.CadetBlue;
+            this.BackColor = System.Drawing.Color.LightSlateGray;
             this.ClientSize = new System.Drawing.Size(562, 373);
             this.Controls.Add(this.BtnKayitYap);
             this.Controls.Add(this.CmbCinsiyet);

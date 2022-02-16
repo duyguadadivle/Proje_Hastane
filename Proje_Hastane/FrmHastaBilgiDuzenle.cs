@@ -12,9 +12,9 @@ using System.Data.SqlClient;
 
 namespace Proje_Hastane
 {
-    public partial class FrmBilgiDuzenle : Form
+    public partial class FrmHastaBilgiDuzenle : Form
     {
-        public FrmBilgiDuzenle()
+        public FrmHastaBilgiDuzenle()
         {
             InitializeComponent();
         }

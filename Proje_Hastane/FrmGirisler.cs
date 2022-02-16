@@ -37,5 +37,15 @@ namespace Proje_Hastane
             fr.Show();
             this.Hide();
         }
+
+        private void FrmGirisler_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

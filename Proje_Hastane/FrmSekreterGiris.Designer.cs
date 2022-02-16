@@ -53,13 +53,12 @@
             this.TxtSifre.Name = "TxtSifre";
             this.TxtSifre.Size = new System.Drawing.Size(204, 34);
             this.TxtSifre.TabIndex = 2;
-            this.TxtSifre.Text = "1111";
             this.TxtSifre.UseSystemPasswordChar = true;
             // 
             // MskTC
             // 
             this.MskTC.Location = new System.Drawing.Point(220, 143);
-            this.MskTC.Mask = "11111111111";
+            this.MskTC.Mask = "00000000000";
             this.MskTC.Name = "MskTC";
             this.MskTC.Size = new System.Drawing.Size(204, 34);
             this.MskTC.TabIndex = 1;
@@ -97,7 +96,7 @@
             this.AcceptButton = this.BtnGirisYap;
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.CadetBlue;
+            this.BackColor = System.Drawing.Color.LightSlateGray;
             this.ClientSize = new System.Drawing.Size(588, 416);
             this.Controls.Add(this.BtnGirisYap);
             this.Controls.Add(this.TxtSifre);

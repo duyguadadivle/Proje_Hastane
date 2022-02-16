@@ -57,10 +57,10 @@
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.BtnDuyurular = new System.Windows.Forms.Button();
             this.BtnListe = new System.Windows.Forms.Button();
             this.BtnBransPanel = new System.Windows.Forms.Button();
             this.BtnDoktorPanel = new System.Windows.Forms.Button();
-            this.BtnDuyurular = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -369,6 +369,16 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Hızlı Erişim";
             // 
+            // BtnDuyurular
+            // 
+            this.BtnDuyurular.Location = new System.Drawing.Point(469, 43);
+            this.BtnDuyurular.Name = "BtnDuyurular";
+            this.BtnDuyurular.Size = new System.Drawing.Size(147, 42);
+            this.BtnDuyurular.TabIndex = 3;
+            this.BtnDuyurular.Text = "Duyurular";
+            this.BtnDuyurular.UseVisualStyleBackColor = true;
+            this.BtnDuyurular.Click += new System.EventHandler(this.BtnDuyurular_Click);
+            // 
             // BtnListe
             // 
             this.BtnListe.Location = new System.Drawing.Point(316, 43);
@@ -399,22 +409,12 @@
             this.BtnDoktorPanel.UseVisualStyleBackColor = true;
             this.BtnDoktorPanel.Click += new System.EventHandler(this.BtnDoktorPanel_Click);
             // 
-            // BtnDuyurular
-            // 
-            this.BtnDuyurular.Location = new System.Drawing.Point(469, 43);
-            this.BtnDuyurular.Name = "BtnDuyurular";
-            this.BtnDuyurular.Size = new System.Drawing.Size(147, 42);
-            this.BtnDuyurular.TabIndex = 3;
-            this.BtnDuyurular.Text = "Duyurular";
-            this.BtnDuyurular.UseVisualStyleBackColor = true;
-            this.BtnDuyurular.Click += new System.EventHandler(this.BtnDuyurular_Click);
-            // 
             // FrmSekreterDetay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.Color.CadetBlue;
+            this.BackColor = System.Drawing.Color.LightSlateGray;
             this.ClientSize = new System.Drawing.Size(1211, 644);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);

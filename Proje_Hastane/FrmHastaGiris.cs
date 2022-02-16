@@ -65,5 +65,10 @@ namespace Proje_Hastane
         {
 
         }
+
+        private void FrmHastaGiris_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

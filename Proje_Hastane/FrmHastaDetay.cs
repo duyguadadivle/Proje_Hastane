@@ -123,7 +123,7 @@ namespace Proje_Hastane
 
         private void LnkBilgiDuzenle_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            FrmBilgiDuzenle fr = new FrmBilgiDuzenle();
+            FrmHastaBilgiDuzenle fr = new FrmHastaBilgiDuzenle();
             fr.tcNo = LblTC.Text;
             fr.Show();
         }

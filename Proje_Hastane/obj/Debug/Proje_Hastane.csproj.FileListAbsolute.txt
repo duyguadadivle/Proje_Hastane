@@ -8,7 +8,6 @@ C:\Users\duyguadadivle\Desktop\C# SQL\Proje_Hastane\Proje_Hastane\obj\Debug\Proj
 C:\Users\duyguadadivle\Desktop\C# SQL\Proje_Hastane\Proje_Hastane\obj\Debug\Proje_Hastane.csproj.CoreCompileInputs.cache
 C:\Users\duyguadadivle\Desktop\C# SQL\Proje_Hastane\Proje_Hastane\obj\Debug\Proje_Hastane.exe
 C:\Users\duyguadadivle\Desktop\C# SQL\Proje_Hastane\Proje_Hastane\obj\Debug\Proje_Hastane.pdb
-C:\Users\duyguadadivle\Desktop\C# SQL\Proje_Hastane\Proje_Hastane\obj\Debug\Proje_Hastane.FrmBilgiDuzenle.resources
 C:\Users\duyguadadivle\Desktop\C# SQL\Proje_Hastane\Proje_Hastane\obj\Debug\Proje_Hastane.FrmBrans.resources
 C:\Users\duyguadadivle\Desktop\C# SQL\Proje_Hastane\Proje_Hastane\obj\Debug\Proje_Hastane.FrmDoktorBilgiDuzenle.resources
 C:\Users\duyguadadivle\Desktop\C# SQL\Proje_Hastane\Proje_Hastane\obj\Debug\Proje_Hastane.FrmDoktorDetay.resources
@@ -22,3 +21,4 @@ C:\Users\duyguadadivle\Desktop\C# SQL\Proje_Hastane\Proje_Hastane\obj\Debug\Proj
 C:\Users\duyguadadivle\Desktop\C# SQL\Proje_Hastane\Proje_Hastane\obj\Debug\Proje_Hastane.FrmRandevuListesi.resources
 C:\Users\duyguadadivle\Desktop\C# SQL\Proje_Hastane\Proje_Hastane\obj\Debug\Proje_Hastane.FrmSekreterDetay.resources
 C:\Users\duyguadadivle\Desktop\C# SQL\Proje_Hastane\Proje_Hastane\obj\Debug\Proje_Hastane.FrmSekreterGiris.resources
+C:\Users\duyguadadivle\Desktop\C# SQL\Proje_Hastane\Proje_Hastane\obj\Debug\Proje_Hastane.FrmHastaBilgiDuzenle.resources

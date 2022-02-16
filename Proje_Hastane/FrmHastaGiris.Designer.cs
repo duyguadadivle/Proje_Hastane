@@ -69,7 +69,7 @@
             // 
             // MskTC
             // 
-            this.MskTC.Location = new System.Drawing.Point(197, 125);
+            this.MskTC.Location = new System.Drawing.Point(197, 129);
             this.MskTC.Mask = "00000000000";
             this.MskTC.Name = "MskTC";
             this.MskTC.Size = new System.Drawing.Size(204, 34);
@@ -90,10 +90,10 @@
             this.LnkUyeOl.AutoSize = true;
             this.LnkUyeOl.Location = new System.Drawing.Point(432, 185);
             this.LnkUyeOl.Name = "LnkUyeOl";
-            this.LnkUyeOl.Size = new System.Drawing.Size(81, 27);
+            this.LnkUyeOl.Size = new System.Drawing.Size(96, 27);
             this.LnkUyeOl.TabIndex = 5;
             this.LnkUyeOl.TabStop = true;
-            this.LnkUyeOl.Text = "Üye Ol";
+            this.LnkUyeOl.Text = "Kayıt Ol";
             this.LnkUyeOl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LnkUyeOl_LinkClicked);
             // 
             // BtnGirisYap
@@ -111,7 +111,7 @@
             this.AcceptButton = this.BtnGirisYap;
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.BackColor = System.Drawing.Color.LightSlateGray;
             this.ClientSize = new System.Drawing.Size(562, 373);
             this.Controls.Add(this.BtnGirisYap);
             this.Controls.Add(this.LnkUyeOl);
@@ -125,6 +125,7 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmHastaGiris";
             this.Text = "Hasta Giriş";
+            this.Load += new System.EventHandler(this.FrmHastaGiris_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

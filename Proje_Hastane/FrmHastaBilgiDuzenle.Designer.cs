@@ -1,6 +1,6 @@
 ﻿namespace Proje_Hastane
 {
-    partial class FrmBilgiDuzenle
+    partial class FrmHastaBilgiDuzenle
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBilgiDuzenle));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHastaBilgiDuzenle));
             this.BtnBilgileriGuncelle = new System.Windows.Forms.Button();
             this.CmbCinsiyet = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -156,12 +156,12 @@
             this.label2.TabIndex = 22;
             this.label2.Text = "TC Kimlik No:";
             // 
-            // FrmBilgiDuzenle
+            // FrmHastaBilgiDuzenle
             // 
             this.AcceptButton = this.BtnBilgileriGuncelle;
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.CadetBlue;
+            this.BackColor = System.Drawing.Color.LightSlateGray;
             this.ClientSize = new System.Drawing.Size(591, 384);
             this.Controls.Add(this.BtnBilgileriGuncelle);
             this.Controls.Add(this.CmbCinsiyet);
@@ -179,8 +179,8 @@
             this.Font = new System.Drawing.Font("Georgia", 13.8F);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
-            this.Name = "FrmBilgiDuzenle";
-            this.Text = "Bilgi Düzenle";
+            this.Name = "FrmHastaBilgiDuzenle";
+            this.Text = "Hasta Bilgi Düzenle";
             this.Load += new System.EventHandler(this.FrmBilgiDuzenle_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
