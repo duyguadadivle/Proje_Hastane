@@ -20,9 +20,9 @@ namespace Proje_Hastane {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("HastaneProjeDBDataSet2")]
+    [global::System.Xml.Serialization.XmlRootAttribute("HastaneProjeDBDataSet3")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class HastaneProjeDBDataSet2 : global::System.Data.DataSet {
+    public partial class HastaneProjeDBDataSet3 : global::System.Data.DataSet {
         
         private Tbl_BranslarDataTable tableTbl_Branslar;
         
@@ -40,7 +40,7 @@ namespace Proje_Hastane {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public HastaneProjeDBDataSet2() {
+        public HastaneProjeDBDataSet3() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -51,7 +51,7 @@ namespace Proje_Hastane {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected HastaneProjeDBDataSet2(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected HastaneProjeDBDataSet3(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -202,7 +202,7 @@ namespace Proje_Hastane {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            HastaneProjeDBDataSet2 cln = ((HastaneProjeDBDataSet2)(base.Clone()));
+            HastaneProjeDBDataSet3 cln = ((HastaneProjeDBDataSet3)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -319,9 +319,9 @@ namespace Proje_Hastane {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "HastaneProjeDBDataSet2";
+            this.DataSetName = "HastaneProjeDBDataSet3";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/HastaneProjeDBDataSet2.xsd";
+            this.Namespace = "http://tempuri.org/HastaneProjeDBDataSet3.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableTbl_Branslar = new Tbl_BranslarDataTable();
@@ -385,7 +385,7 @@ namespace Proje_Hastane {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            HastaneProjeDBDataSet2 ds = new HastaneProjeDBDataSet2();
+            HastaneProjeDBDataSet3 ds = new HastaneProjeDBDataSet3();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -662,7 +662,7 @@ namespace Proje_Hastane {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                HastaneProjeDBDataSet2 ds = new HastaneProjeDBDataSet2();
+                HastaneProjeDBDataSet3 ds = new HastaneProjeDBDataSet3();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -996,7 +996,7 @@ namespace Proje_Hastane {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                HastaneProjeDBDataSet2 ds = new HastaneProjeDBDataSet2();
+                HastaneProjeDBDataSet3 ds = new HastaneProjeDBDataSet3();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1273,7 +1273,7 @@ namespace Proje_Hastane {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                HastaneProjeDBDataSet2 ds = new HastaneProjeDBDataSet2();
+                HastaneProjeDBDataSet3 ds = new HastaneProjeDBDataSet3();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1640,7 +1640,7 @@ namespace Proje_Hastane {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                HastaneProjeDBDataSet2 ds = new HastaneProjeDBDataSet2();
+                HastaneProjeDBDataSet3 ds = new HastaneProjeDBDataSet3();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2006,7 +2006,7 @@ namespace Proje_Hastane {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                HastaneProjeDBDataSet2 ds = new HastaneProjeDBDataSet2();
+                HastaneProjeDBDataSet3 ds = new HastaneProjeDBDataSet3();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2310,7 +2310,7 @@ namespace Proje_Hastane {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                HastaneProjeDBDataSet2 ds = new HastaneProjeDBDataSet2();
+                HastaneProjeDBDataSet3 ds = new HastaneProjeDBDataSet3();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -3402,7 +3402,7 @@ namespace Proje_Hastane {
         }
     }
 }
-namespace Proje_Hastane.HastaneProjeDBDataSet2TableAdapters {
+namespace Proje_Hastane.HastaneProjeDBDataSet3TableAdapters {
     
     
     /// <summary>
@@ -3561,7 +3561,7 @@ namespace Proje_Hastane.HastaneProjeDBDataSet2TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Proje_Hastane.Properties.Settings.Default.HastaneProjeDBConnectionString;
+            this._connection.ConnectionString = global::Proje_Hastane.Properties.Settings.Default.HastaneProjeDBConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3578,7 +3578,7 @@ namespace Proje_Hastane.HastaneProjeDBDataSet2TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(HastaneProjeDBDataSet2.Tbl_BranslarDataTable dataTable) {
+        public virtual int Fill(HastaneProjeDBDataSet3.Tbl_BranslarDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -3591,9 +3591,9 @@ namespace Proje_Hastane.HastaneProjeDBDataSet2TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual HastaneProjeDBDataSet2.Tbl_BranslarDataTable GetData() {
+        public virtual HastaneProjeDBDataSet3.Tbl_BranslarDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            HastaneProjeDBDataSet2.Tbl_BranslarDataTable dataTable = new HastaneProjeDBDataSet2.Tbl_BranslarDataTable();
+            HastaneProjeDBDataSet3.Tbl_BranslarDataTable dataTable = new HastaneProjeDBDataSet3.Tbl_BranslarDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -3601,14 +3601,14 @@ namespace Proje_Hastane.HastaneProjeDBDataSet2TableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(HastaneProjeDBDataSet2.Tbl_BranslarDataTable dataTable) {
+        public virtual int Update(HastaneProjeDBDataSet3.Tbl_BranslarDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(HastaneProjeDBDataSet2 dataSet) {
+        public virtual int Update(HastaneProjeDBDataSet3 dataSet) {
             return this.Adapter.Update(dataSet, "Tbl_Branslar");
         }
         
@@ -3911,7 +3911,7 @@ SELECT Doktorid, DoktorAd, DoktorSoyad, DoktorBrans, DoktorTC, DoktorSifre FROM 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Proje_Hastane.Properties.Settings.Default.HastaneProjeDBConnectionString;
+            this._connection.ConnectionString = global::Proje_Hastane.Properties.Settings.Default.HastaneProjeDBConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3929,7 +3929,7 @@ SELECT Doktorid, DoktorAd, DoktorSoyad, DoktorBrans, DoktorTC, DoktorSifre FROM 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(HastaneProjeDBDataSet2.Tbl_DoktorlarDataTable dataTable) {
+        public virtual int Fill(HastaneProjeDBDataSet3.Tbl_DoktorlarDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -3942,9 +3942,9 @@ SELECT Doktorid, DoktorAd, DoktorSoyad, DoktorBrans, DoktorTC, DoktorSifre FROM 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual HastaneProjeDBDataSet2.Tbl_DoktorlarDataTable GetData() {
+        public virtual HastaneProjeDBDataSet3.Tbl_DoktorlarDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            HastaneProjeDBDataSet2.Tbl_DoktorlarDataTable dataTable = new HastaneProjeDBDataSet2.Tbl_DoktorlarDataTable();
+            HastaneProjeDBDataSet3.Tbl_DoktorlarDataTable dataTable = new HastaneProjeDBDataSet3.Tbl_DoktorlarDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -3952,14 +3952,14 @@ SELECT Doktorid, DoktorAd, DoktorSoyad, DoktorBrans, DoktorTC, DoktorSifre FROM 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(HastaneProjeDBDataSet2.Tbl_DoktorlarDataTable dataTable) {
+        public virtual int Update(HastaneProjeDBDataSet3.Tbl_DoktorlarDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(HastaneProjeDBDataSet2 dataSet) {
+        public virtual int Update(HastaneProjeDBDataSet3 dataSet) {
             return this.Adapter.Update(dataSet, "Tbl_Doktorlar");
         }
         
@@ -4349,7 +4349,7 @@ SELECT Doktorid, DoktorAd, DoktorSoyad, DoktorBrans, DoktorTC, DoktorSifre FROM 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Proje_Hastane.Properties.Settings.Default.HastaneProjeDBConnectionString;
+            this._connection.ConnectionString = global::Proje_Hastane.Properties.Settings.Default.HastaneProjeDBConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4366,7 +4366,7 @@ SELECT Doktorid, DoktorAd, DoktorSoyad, DoktorBrans, DoktorTC, DoktorSifre FROM 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(HastaneProjeDBDataSet2.Tbl_DuyurularDataTable dataTable) {
+        public virtual int Fill(HastaneProjeDBDataSet3.Tbl_DuyurularDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -4379,9 +4379,9 @@ SELECT Doktorid, DoktorAd, DoktorSoyad, DoktorBrans, DoktorTC, DoktorSifre FROM 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual HastaneProjeDBDataSet2.Tbl_DuyurularDataTable GetData() {
+        public virtual HastaneProjeDBDataSet3.Tbl_DuyurularDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            HastaneProjeDBDataSet2.Tbl_DuyurularDataTable dataTable = new HastaneProjeDBDataSet2.Tbl_DuyurularDataTable();
+            HastaneProjeDBDataSet3.Tbl_DuyurularDataTable dataTable = new HastaneProjeDBDataSet3.Tbl_DuyurularDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -4389,14 +4389,14 @@ SELECT Doktorid, DoktorAd, DoktorSoyad, DoktorBrans, DoktorTC, DoktorSifre FROM 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(HastaneProjeDBDataSet2.Tbl_DuyurularDataTable dataTable) {
+        public virtual int Update(HastaneProjeDBDataSet3.Tbl_DuyurularDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(HastaneProjeDBDataSet2 dataSet) {
+        public virtual int Update(HastaneProjeDBDataSet3 dataSet) {
             return this.Adapter.Update(dataSet, "Tbl_Duyurular");
         }
         
@@ -4713,7 +4713,7 @@ SELECT Hastaid, HastaAd, HastaSoyad, HastaTC, HastaTelefon, HastaSifre, HastaCin
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Proje_Hastane.Properties.Settings.Default.HastaneProjeDBConnectionString;
+            this._connection.ConnectionString = global::Proje_Hastane.Properties.Settings.Default.HastaneProjeDBConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4731,7 +4731,7 @@ SELECT Hastaid, HastaAd, HastaSoyad, HastaTC, HastaTelefon, HastaSifre, HastaCin
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(HastaneProjeDBDataSet2.Tbl_HastalarDataTable dataTable) {
+        public virtual int Fill(HastaneProjeDBDataSet3.Tbl_HastalarDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -4744,9 +4744,9 @@ SELECT Hastaid, HastaAd, HastaSoyad, HastaTC, HastaTelefon, HastaSifre, HastaCin
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual HastaneProjeDBDataSet2.Tbl_HastalarDataTable GetData() {
+        public virtual HastaneProjeDBDataSet3.Tbl_HastalarDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            HastaneProjeDBDataSet2.Tbl_HastalarDataTable dataTable = new HastaneProjeDBDataSet2.Tbl_HastalarDataTable();
+            HastaneProjeDBDataSet3.Tbl_HastalarDataTable dataTable = new HastaneProjeDBDataSet3.Tbl_HastalarDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -4754,14 +4754,14 @@ SELECT Hastaid, HastaAd, HastaSoyad, HastaTC, HastaTelefon, HastaSifre, HastaCin
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(HastaneProjeDBDataSet2.Tbl_HastalarDataTable dataTable) {
+        public virtual int Update(HastaneProjeDBDataSet3.Tbl_HastalarDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(HastaneProjeDBDataSet2 dataSet) {
+        public virtual int Update(HastaneProjeDBDataSet3 dataSet) {
             return this.Adapter.Update(dataSet, "Tbl_Hastalar");
         }
         
@@ -5262,7 +5262,7 @@ SELECT Randevuid, RandevuTarih, RandevuSaat, RandevuBrans, RandevuDoktor, Randev
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Proje_Hastane.Properties.Settings.Default.HastaneProjeDBConnectionString;
+            this._connection.ConnectionString = global::Proje_Hastane.Properties.Settings.Default.HastaneProjeDBConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5280,7 +5280,7 @@ SELECT Randevuid, RandevuTarih, RandevuSaat, RandevuBrans, RandevuDoktor, Randev
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(HastaneProjeDBDataSet2.Tbl_RandevularDataTable dataTable) {
+        public virtual int Fill(HastaneProjeDBDataSet3.Tbl_RandevularDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -5293,9 +5293,9 @@ SELECT Randevuid, RandevuTarih, RandevuSaat, RandevuBrans, RandevuDoktor, Randev
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual HastaneProjeDBDataSet2.Tbl_RandevularDataTable GetData() {
+        public virtual HastaneProjeDBDataSet3.Tbl_RandevularDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            HastaneProjeDBDataSet2.Tbl_RandevularDataTable dataTable = new HastaneProjeDBDataSet2.Tbl_RandevularDataTable();
+            HastaneProjeDBDataSet3.Tbl_RandevularDataTable dataTable = new HastaneProjeDBDataSet3.Tbl_RandevularDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5303,14 +5303,14 @@ SELECT Randevuid, RandevuTarih, RandevuSaat, RandevuBrans, RandevuDoktor, Randev
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(HastaneProjeDBDataSet2.Tbl_RandevularDataTable dataTable) {
+        public virtual int Update(HastaneProjeDBDataSet3.Tbl_RandevularDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(HastaneProjeDBDataSet2 dataSet) {
+        public virtual int Update(HastaneProjeDBDataSet3 dataSet) {
             return this.Adapter.Update(dataSet, "Tbl_Randevular");
         }
         
@@ -5783,7 +5783,7 @@ SELECT Sekreterid, SekreterAdSoyad, SekreterTC, SekreterSifre FROM Tbl_Sekreterl
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Proje_Hastane.Properties.Settings.Default.HastaneProjeDBConnectionString;
+            this._connection.ConnectionString = global::Proje_Hastane.Properties.Settings.Default.HastaneProjeDBConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5801,7 +5801,7 @@ SELECT Sekreterid, SekreterAdSoyad, SekreterTC, SekreterSifre FROM Tbl_Sekreterl
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(HastaneProjeDBDataSet2.Tbl_SekreterlerDataTable dataTable) {
+        public virtual int Fill(HastaneProjeDBDataSet3.Tbl_SekreterlerDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -5814,9 +5814,9 @@ SELECT Sekreterid, SekreterAdSoyad, SekreterTC, SekreterSifre FROM Tbl_Sekreterl
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual HastaneProjeDBDataSet2.Tbl_SekreterlerDataTable GetData() {
+        public virtual HastaneProjeDBDataSet3.Tbl_SekreterlerDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            HastaneProjeDBDataSet2.Tbl_SekreterlerDataTable dataTable = new HastaneProjeDBDataSet2.Tbl_SekreterlerDataTable();
+            HastaneProjeDBDataSet3.Tbl_SekreterlerDataTable dataTable = new HastaneProjeDBDataSet3.Tbl_SekreterlerDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5824,14 +5824,14 @@ SELECT Sekreterid, SekreterAdSoyad, SekreterTC, SekreterSifre FROM Tbl_Sekreterl
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(HastaneProjeDBDataSet2.Tbl_SekreterlerDataTable dataTable) {
+        public virtual int Update(HastaneProjeDBDataSet3.Tbl_SekreterlerDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(HastaneProjeDBDataSet2 dataSet) {
+        public virtual int Update(HastaneProjeDBDataSet3 dataSet) {
             return this.Adapter.Update(dataSet, "Tbl_Sekreterler");
         }
         
@@ -6215,7 +6215,7 @@ SELECT Sekreterid, SekreterAdSoyad, SekreterTC, SekreterSifre FROM Tbl_Sekreterl
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(HastaneProjeDBDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(HastaneProjeDBDataSet3 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._tbl_BranslarTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.Tbl_Branslar.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -6279,7 +6279,7 @@ SELECT Sekreterid, SekreterAdSoyad, SekreterTC, SekreterSifre FROM Tbl_Sekreterl
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(HastaneProjeDBDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(HastaneProjeDBDataSet3 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._tbl_BranslarTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.Tbl_Branslar.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -6337,7 +6337,7 @@ SELECT Sekreterid, SekreterAdSoyad, SekreterTC, SekreterSifre FROM Tbl_Sekreterl
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(HastaneProjeDBDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(HastaneProjeDBDataSet3 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._tbl_SekreterlerTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.Tbl_Sekreterler.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -6419,7 +6419,7 @@ SELECT Sekreterid, SekreterAdSoyad, SekreterTC, SekreterSifre FROM Tbl_Sekreterl
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(HastaneProjeDBDataSet2 dataSet) {
+        public virtual int UpdateAll(HastaneProjeDBDataSet3 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

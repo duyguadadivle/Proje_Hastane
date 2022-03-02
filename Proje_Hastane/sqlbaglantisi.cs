@@ -13,10 +13,11 @@ namespace Proje_Hastane
     {
         public SqlConnection baglanti()
         {
-            SqlConnection baglan = new SqlConnection("Data Source=DESKTOP-OBVPPKV;Initial Catalog=HastaneProjeDB;Integrated Security=True");
+            //Data Source=DESKTOP-MIQU7GB\SQLEXPRESS;Initial Catalog=HastaneProjeDB;Integrated Security=True
+            SqlConnection baglan = new SqlConnection("Data Source=DESKTOP-MIQU7GB\\SQLEXPRESS;Initial Catalog=HastaneProjeDB;Integrated Security=True");
+            //Data Source = DESKTOP - MIQU7GB\SQLEXPRESS; Initial Catalog = HastaneProjeDB; Integrated Security = True
             baglan.Open();
             return baglan;
-
         }
     }
 }

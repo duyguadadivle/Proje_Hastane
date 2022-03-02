@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="HastaneProjeDBDataSet1" targetNamespace="http://tempuri.org/HastaneProjeDBDataSet1.xsd" xmlns:mstns="http://tempuri.org/HastaneProjeDBDataSet1.xsd" xmlns="http://tempuri.org/HastaneProjeDBDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+<xs:schema id="HastaneProjeDBDataSet3" targetNamespace="http://tempuri.org/HastaneProjeDBDataSet3.xsd" xmlns:mstns="http://tempuri.org/HastaneProjeDBDataSet3.xsd" xmlns="http://tempuri.org/HastaneProjeDBDataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
@@ -432,7 +432,7 @@ SELECT Sekreterid, SekreterAdSoyad, SekreterTC, SekreterSifre FROM Tbl_Sekreterl
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="HastaneProjeDBDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="HastaneProjeDBDataSet1" msprop:Generator_DataSetName="HastaneProjeDBDataSet1">
+  <xs:element name="HastaneProjeDBDataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="HastaneProjeDBDataSet3" msprop:Generator_DataSetName="HastaneProjeDBDataSet3">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element name="Tbl_Branslar" msprop:Generator_RowEvHandlerName="Tbl_BranslarRowChangeEventHandler" msprop:Generator_RowDeletedName="Tbl_BranslarRowDeleted" msprop:Generator_RowDeletingName="Tbl_BranslarRowDeleting" msprop:Generator_RowEvArgName="Tbl_BranslarRowChangeEvent" msprop:Generator_TablePropName="Tbl_Branslar" msprop:Generator_RowChangedName="Tbl_BranslarRowChanged" msprop:Generator_RowChangingName="Tbl_BranslarRowChanging" msprop:Generator_TableClassName="Tbl_BranslarDataTable" msprop:Generator_RowClassName="Tbl_BranslarRow" msprop:Generator_TableVarName="tableTbl_Branslar" msprop:Generator_UserTableName="Tbl_Branslar">
